@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,10 +16,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 24 96% 53%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 349 75% 37%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -35,19 +38,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -96,6 +92,74 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-poppins;
+  }
+
+  .om-symbol {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+  }
+  
+  .sanskrit-text {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+  }
+
+  .hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .calendar-date {
+    @apply bg-temple-gold text-temple-dark p-2 rounded-t-md font-bold text-center;
+  }
+
+  .calendar-content {
+    @apply bg-white p-4 rounded-b-md shadow-md border-t-2 border-temple-maroon;
+  }
+
+  .section-heading {
+    @apply text-3xl font-semibold text-temple-maroon relative inline-block;
+  }
+
+  .section-heading::after {
+    content: '';
+    @apply absolute left-0 -bottom-2 h-1 w-1/2 bg-temple-saffron;
+  }
+
+  .btn-primary {
+    @apply bg-temple-saffron hover:bg-orange-600 text-white py-2 px-6 rounded-md transition-all duration-300 inline-block font-medium;
+  }
+
+  .btn-secondary {
+    @apply bg-temple-maroon hover:bg-red-900 text-white py-2 px-6 rounded-md transition-all duration-300 inline-block font-medium;
+  }
+
+  .card-hover {
+    @apply transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg;
+  }
+  
+  .event-card {
+    @apply bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300;
+  }
+
+  .image-gallery {
+    @apply grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+  }
+
+  .gallery-item {
+    @apply overflow-hidden rounded-lg;
+  }
+
+  .gallery-item img {
+    @apply w-full h-64 object-cover transition-transform duration-500 hover:scale-110;
+  }
+
+  .temple-input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-temple-saffron;
+  }
+
+  .navbar-glass {
+    @apply bg-white bg-opacity-90 backdrop-blur-md;
   }
 }
