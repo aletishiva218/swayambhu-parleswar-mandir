@@ -4,11 +4,9 @@ import { X } from 'lucide-react';
 
 interface GalleryItemProps {
   imageUrl: string;
-  alt: string;
-  category: string;
 }
 
-const GalleryItem = ({ imageUrl, alt, category }: GalleryItemProps) => {
+const GalleryItem = ({ imageUrl }: GalleryItemProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -19,12 +17,9 @@ const GalleryItem = ({ imageUrl, alt, category }: GalleryItemProps) => {
       >
         <img 
           src={imageUrl} 
-          alt={alt} 
           className="w-full h-64 object-cover"
         />
-        <div className="p-2 bg-temple-gold bg-opacity-80 text-temple-dark text-sm font-medium">
-          {category}
-        </div>
+        
       </div>
 
       {isOpen && (
@@ -37,7 +32,6 @@ const GalleryItem = ({ imageUrl, alt, category }: GalleryItemProps) => {
           </button>
           <img 
             src={imageUrl}
-            alt={alt}
             className="max-h-[90vh] max-w-full object-contain"
           />
         </div>

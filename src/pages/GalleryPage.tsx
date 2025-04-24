@@ -5,6 +5,50 @@ import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
 import GalleryItem from '@/components/GalleryItem';
 
+import aartiImage1 from "../assets/images/gallary/aarti/image1.png";
+import aartiImage2 from "../assets/images/gallary/aarti/image2.png";
+import aartiImage3 from "../assets/images/gallary/aarti/image3.png";
+import aartiImage4 from "../assets/images/gallary/aarti/image4.png";
+import aartiImage5 from "../assets/images/gallary/aarti/image5.png";
+
+import festivaliImage1 from "../assets/images/gallary/festivals/image1.png";;
+import festivaliImage2 from "../assets/images/gallary/festivals/image2.png";;
+import festivaliImage3 from "../assets/images/gallary/festivals/image3.png";;
+import festivaliImage4 from "../assets/images/gallary/festivals/image4.png";;
+import festivaliImage5 from "../assets/images/gallary/festivals/image5.png";;
+import festivaliImage6 from "../assets/images/gallary/festivals/image6.png";;
+import festivaliImage7 from "../assets/images/gallary/festivals/image7.png";;
+import festivaliImage8 from "../assets/images/gallary/festivals/image8.png";;
+import festivaliImage9 from "../assets/images/gallary/festivals/image9.png";;
+import festivaliImage10 from "../assets/images/gallary/festivals/image10.png";;
+
+import insideImage1 from "../assets/images/gallary/inside view/image1.png";
+import insideImage2 from "../assets/images/gallary/inside view/image2.png";
+import insideImage3 from "../assets/images/gallary/inside view/image3.png";
+import insideImage4 from "../assets/images/gallary/inside view/image4.png";
+import insideImage5 from "../assets/images/gallary/inside view/image5.png";
+import insideImage6 from "../assets/images/gallary/inside view/image6.png";
+import insideImage7 from "../assets/images/gallary/inside view/image7.png";
+import insideImage8 from "../assets/images/gallary/inside view/image8.png";
+import insideImage9 from "../assets/images/gallary/inside view/image9.png";
+import insideImage10 from "../assets/images/gallary/inside view/image10.png";
+import insideImage11 from "../assets/images/gallary/inside view/image11.png";
+import insideImage12 from "../assets/images/gallary/inside view/image12.png";
+import insideImage13 from "../assets/images/gallary/inside view/image13.png";
+import insideImage14 from "../assets/images/gallary/inside view/image14.png";
+import insideImage15 from "../assets/images/gallary/inside view/image15.png";
+import insideImage16 from "../assets/images/gallary/inside view/image16.png";
+import insideImage17 from "../assets/images/gallary/inside view/image17.png";
+import insideImage18 from "../assets/images/gallary/inside view/image18.png";
+import insideImage19 from "../assets/images/gallary/inside view/image19.png";
+import insideImage20 from "../assets/images/gallary/inside view/image20.png";
+import insideImage21 from "../assets/images/gallary/inside view/image21.png";
+
+import outsideImage1 from "../assets/images/gallary/outside view/image1.png";
+import outsideImage2 from "../assets/images/gallary/outside view/image2.png";
+import outsideImage3 from "../assets/images/gallary/outside view/image3.png";
+
+
 const GalleryPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   
@@ -12,75 +56,198 @@ const GalleryPage = () => {
   const galleryImages = [
     {
       id: 1,
-      imageUrl: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=600&q=80',
-      alt: 'Temple Front View',
-      category: 'architecture',
+      imageUrl: aartiImage1,
+      category: 'Aarti',
     },
     {
       id: 2,
-      imageUrl: 'https://images.unsplash.com/photo-1466442929976-97f336a657be?auto=format&fit=crop&w=600&q=80',
-      alt: 'Temple Interior',
-      category: 'architecture',
+      imageUrl: aartiImage2,
+      category: 'Aarti',
     },
     {
       id: 3,
-      imageUrl: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80',
-      alt: 'Temple Tower',
-      category: 'architecture',
+      imageUrl: aartiImage3,
+      category: 'Aarti',
     },
     {
       id: 4,
-      imageUrl: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80',
-      alt: 'Morning Aarti Ceremony',
-      category: 'aarti',
+      imageUrl: aartiImage4,
+      category: 'Aarti',
     },
     {
       id: 5,
-      imageUrl: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=600&q=80',
-      alt: 'Evening Aarti',
-      category: 'aarti',
+      imageUrl: aartiImage5,
+      category: 'Aarti',
     },
     {
       id: 6,
-      imageUrl: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80',
-      alt: 'Special Aarti',
-      category: 'aarti',
+      imageUrl: festivaliImage1,
+      category: 'Festivals',
     },
     {
       id: 7,
-      imageUrl: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=600&q=80',
-      alt: 'Holi Festival Celebration',
-      category: 'festivals',
+      imageUrl: festivaliImage2,
+      category: 'Festivals',
     },
     {
       id: 8,
-      imageUrl: 'https://images.unsplash.com/photo-1466442929976-97f336a657be?auto=format&fit=crop&w=600&q=80',
-      alt: 'Diwali Celebration',
-      category: 'festivals',
+      imageUrl: festivaliImage3,
+      category: 'Festivals',
     },
     {
       id: 9,
-      imageUrl: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80',
-      alt: 'Mahashivratri Celebration',
-      category: 'festivals',
+      imageUrl: festivaliImage4,
+      category: 'Festivals',
     },
     {
       id: 10,
-      imageUrl: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=600&q=80',
-      alt: 'Janmashtami Festival',
-      category: 'festivals',
+      imageUrl: festivaliImage5,
+      category: 'Festivals',
     },
     {
       id: 11,
-      imageUrl: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80',
-      alt: 'Temple Courtyard',
-      category: 'architecture',
+      imageUrl: festivaliImage6,
+      category: 'Festivals',
     },
     {
       id: 12,
-      imageUrl: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=600&q=80',
-      alt: 'Special Rudrabhishekam',
-      category: 'aarti',
+      imageUrl: festivaliImage7,
+      category: 'Festivals',
+    },
+    {
+      id: 13,
+      imageUrl: festivaliImage8,
+      category: 'Festivals',
+    },
+    {
+      id: 14,
+      imageUrl: festivaliImage9,
+      category: 'Festivals',
+    },
+    {
+      id: 15,
+      imageUrl: festivaliImage10,
+      category: 'Festivals',
+    },
+    {
+      id: 16,
+      imageUrl: insideImage1,
+      category: 'Inside View',
+    },
+    {
+      id: 17,
+      imageUrl: insideImage2,
+      category: 'Inside View',
+    },
+    {
+      id: 18,
+      imageUrl: insideImage3,
+      category: 'Inside View',
+    },
+    {
+      id: 19,
+      imageUrl: insideImage4,
+      category: 'Inside View',
+    },
+    {
+      id: 20,
+      imageUrl: insideImage5,
+      category: 'Inside View',
+    },
+    {
+      id: 21,
+      imageUrl: insideImage6,
+      category: 'Inside View',
+    },
+    {
+      id: 22,
+      imageUrl: insideImage7,
+      category: 'Inside View',
+    },
+    {
+      id: 23,
+      imageUrl: insideImage8,
+      category: 'Inside View',
+    },
+    {
+      id: 24,
+      imageUrl: insideImage9,
+      category: 'Inside View',
+    },
+    {
+      id: 25,
+      imageUrl: insideImage10,
+      category: 'Inside View',
+    },
+    {
+      id: 26,
+      imageUrl: insideImage11,
+      category: 'Inside View',
+    },
+    {
+      id: 27,
+      imageUrl: insideImage12,
+      category: 'Inside View',
+    },
+    {
+      id: 28,
+      imageUrl: insideImage13,
+      category: 'Inside View',
+    },
+    {
+      id: 29,
+      imageUrl: insideImage14,
+      category: 'Inside View',
+    },
+    {
+      id: 30,
+      imageUrl: insideImage15,
+      category: 'Inside View',
+    },
+    {
+      id: 31,
+      imageUrl: insideImage16,
+      category: 'Inside View',
+    },
+    {
+      id: 32,
+      imageUrl: insideImage17,
+      category: 'Inside View',
+    },
+    {
+      id: 33,
+      imageUrl: insideImage18,
+      category: 'Inside View',
+    },
+    {
+      id: 34,
+      imageUrl: insideImage19,
+      category: 'Inside View',
+    },
+    {
+      id: 35,
+      imageUrl: insideImage20,
+      category: 'Inside View',
+    },
+    {
+      id: 37,
+      imageUrl: insideImage21,
+      category: 'Inside View',
+    },
+    {
+      id: 38,
+      imageUrl: outsideImage1,
+      category: 'Outside View',
+    },
+    {
+      id: 39,
+      imageUrl: outsideImage2,
+      category: 'Outside View',
+    },
+    {
+      id: 40,
+      imageUrl: outsideImage3,
+      category: 'Outside View',
     },
   ];
   
@@ -113,7 +280,7 @@ const GalleryPage = () => {
           
           <div className="mb-10 text-center">
             <div className="inline-flex flex-wrap justify-center gap-2 bg-gray-100 rounded-lg p-2">
-              {['all', 'architecture', 'aarti', 'festivals'].map((category) => (
+              {['all', 'Inside View', 'Aarti', 'Festivals','Outside View'].map((category) => (
                 <button
                   key={category}
                   onClick={() => setActiveCategory(category)}
@@ -134,8 +301,6 @@ const GalleryPage = () => {
               <GalleryItem 
                 key={image.id}
                 imageUrl={image.imageUrl}
-                alt={image.alt}
-                category={image.alt}
               />
             ))}
           </div>
