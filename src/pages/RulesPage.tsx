@@ -211,7 +211,27 @@ const RulesPage = () => {
           </div>
         </div>
       </div>
-      
+      <div className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-temple-maroon mb-6">Stay Updated</h2>
+          <p className="max-w-2xl mx-auto mb-8 text-gray-700">
+            Subscribe to our newsletter to receive updates about upcoming events, festivals, and ceremonies.
+          </p>
+          
+          <div className="max-w-md mx-auto">
+            <div className="flex">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="temple-input rounded-r-none flex-1"
+              />
+              <button className="btn-primary rounded-l-none">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   );

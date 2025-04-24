@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'navbar-glass shadow-md py-2' : 'bg-transparent py-4'
+     'navbar-glass shadow-md py-2'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
@@ -39,10 +39,10 @@ const Header = () => {
               <span className="om-symbol text-white font-bold text-2xl">ॐ</span>
             </div>
             <div className="ml-2">
-              <h1 className={`font-devnagari font-bold text-2xl ${isScrolled ? 'text-temple-maroon' : 'text-white'}`}>
+              <h1 className={`font-devnagari font-bold text-2xl text-temple-maroon`}>
                 स्वयंभू पालेश्वर
               </h1>
-              <p className={`text-sm ${isScrolled ? 'text-temple-dark' : 'text-white'}`}>मंदिर</p>
+              
             </div>
           </Link>
 
@@ -63,7 +63,7 @@ const Header = () => {
                   <Link 
                     to={link.path} 
                     className={`font-medium transition-all hover:text-temple-saffron ${
-                      isScrolled ? 'text-temple-dark' : 'text-white'
+                       'text-temple-dark' 
                     }`}
                   >
                     {link.name}

@@ -15,7 +15,6 @@ const Footer = () => {
               </div>
               <div className="ml-2">
                 <h3 className="font-devnagari font-bold text-xl">स्वयंभू पालेश्वर</h3>
-                <p className="text-sm">मंदिर</p>
               </div>
             </div>
             <p className="text-sm mb-4">
@@ -79,18 +78,18 @@ const Footer = () => {
                 <div className="bg-temple-saffron p-2 rounded mr-3 mt-1">
                   <Mail size={14} />
                 </div>
-                <p>info@swayambhupaleshwar.org</p>
+                <p>swayambhupaleswar@gmail.com</p>
               </div>
               <div className="flex items-start">
                 <div className="bg-temple-saffron p-2 rounded mr-3 mt-1">
                   <Phone size={14} />
                 </div>
-                <p>+91 98765 43210</p>
+                <p>+91 99206 81945</p>
               </div>
               <address className="not-italic">
-                123 Temple Street,<br />
-                Spiritual Gardens,<br />
-                Maharashtra, India 400001
+              Village, Swayambhu Paleshwar Mahadev Mandir Rd,<br/>
+near Dena Bank, Bori Colony, Marol, <br/>
+Andheri East, Mumbai, Maharashtra 400059
               </address>
             </div>
           </div>

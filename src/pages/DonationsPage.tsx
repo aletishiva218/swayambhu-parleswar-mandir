@@ -46,6 +46,14 @@ const DonationsPage = () => {
                   </div>
                   <div className="flex items-start">
                     <Check size={18} className="text-temple-saffron mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">For Medical Facilities</span>
+                  </div>
+                  <div className="flex items-start">
+                    <Check size={18} className="text-temple-saffron mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">Support for priest for dharma rakshana, prachar & prasad</span>
+                  </div>
+                  <div className="flex items-start">
+                    <Check size={18} className="text-temple-saffron mr-2 mt-1 flex-shrink-0" />
                     <span className="text-gray-700">Temple maintenance</span>
                   </div>
                   <div className="flex items-start">
@@ -100,6 +108,10 @@ const DonationsPage = () => {
                   </div>
                   <div className="flex items-start">
                     <Check size={18} className="text-temple-saffron mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">Festival Feasts: Daily & Weekly with Sponsar</span>
+                  </div>
+                  <div className="flex items-start">
+                    <Check size={18} className="text-temple-saffron mr-2 mt-1 flex-shrink-0" />
                     <span className="text-gray-700">New community hall</span>
                   </div>
                   <div className="flex items-start">
@@ -128,7 +140,7 @@ const DonationsPage = () => {
                 <div className="space-y-3">
                   <div className="flex flex-col">
                     <span className="text-gray-500 text-sm">Account Name</span>
-                    <span className="font-medium">स्वयंभू पालेश्वर मंदिर Trust</span>
+                    <span className="font-medium">Swayambhu Paleshwar Mahadev Seva Samiti</span>
                   </div>
                   <div className="flex flex-col">
                     <span className="text-gray-500 text-sm">Account Number</span>
@@ -187,6 +199,13 @@ const DonationsPage = () => {
                 </p>
                 <button className="btn-secondary w-full">Set Up Monthly Donation</button>
               </div>
+              <div className="mt-6 bg-white rounded-lg shadow p-6">
+                <h3 className="text-xl font-semibold text-temple-maroon mb-4">Annually Donation Programs</h3>
+                <p className="text-gray-700 mb-4">
+                  Set up recurring donations to provide sustained support for temple activities and services.
+                </p>
+                <button className="btn-secondary w-full">Set Up Annually Donation</button>
+              </div>
             </div>
           </div>
         </div>
@@ -203,22 +222,22 @@ const DonationsPage = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <div className="bg-temple-gold bg-opacity-10 p-6 rounded-lg">
-              <div className="text-4xl font-bold text-temple-maroon mb-2">5000+</div>
-              <p className="text-gray-700">Daily Visitors</p>
+              <div className="text-4xl font-bold text-temple-maroon mb-2">50,000+</div>
+              <p className="text-gray-700">Annual Visitors</p>
             </div>
             
             <div className="bg-temple-gold bg-opacity-10 p-6 rounded-lg">
               <div className="text-4xl font-bold text-temple-maroon mb-2">500+</div>
-              <p className="text-gray-700">Meals Served Daily</p>
+              <p className="text-gray-700">Meals Served Weekly</p>
             </div>
             
             <div className="bg-temple-gold bg-opacity-10 p-6 rounded-lg">
-              <div className="text-4xl font-bold text-temple-maroon mb-2">50+</div>
+              <div className="text-4xl font-bold text-temple-maroon mb-2">150+</div>
               <p className="text-gray-700">Community Programs</p>
             </div>
             
             <div className="bg-temple-gold bg-opacity-10 p-6 rounded-lg">
-              <div className="text-4xl font-bold text-temple-maroon mb-2">20+</div>
+              <div className="text-4xl font-bold text-temple-maroon mb-2">125+</div>
               <p className="text-gray-700">Years of Service</p>
             </div>
           </div>
@@ -232,6 +251,7 @@ const DonationsPage = () => {
             subtitle="Contribute to the temple through various services and in-kind donations"
             centered
           />
+          <h3 className="text-xl font-semibold text-temple-maroon mb-3 text-center">All kinds of Services</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <div className="p-6 bg-white rounded-lg shadow-md">
@@ -266,7 +286,27 @@ const DonationsPage = () => {
           </div>
         </div>
       </div>
-      
+      <div className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-temple-maroon mb-6">Stay Updated</h2>
+          <p className="max-w-2xl mx-auto mb-8 text-gray-700">
+            Subscribe to our newsletter to receive updates about upcoming events, festivals, and ceremonies.
+          </p>
+          
+          <div className="max-w-md mx-auto">
+            <div className="flex">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="temple-input rounded-r-none flex-1"
+              />
+              <button className="btn-primary rounded-l-none">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   );

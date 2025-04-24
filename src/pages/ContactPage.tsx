@@ -189,9 +189,9 @@ const ContactPage = () => {
                   <div>
                     <h3 className="text-lg font-medium text-temple-maroon">Address</h3>
                     <address className="not-italic text-gray-700 mt-1">
-                      123 Temple Street,<br />
-                      Spiritual Gardens,<br />
-                      Maharashtra, India 400001
+                    Village, Swayambhu Paleshwar Mahadev Mandir Rd,<br />
+                     near Dena Bank, Bori Colony, Marol,<br />
+                      Andheri East, Mumbai, Maharashtra 400059
                     </address>
                   </div>
                 </div>
@@ -203,8 +203,7 @@ const ContactPage = () => {
                   <div>
                     <h3 className="text-lg font-medium text-temple-maroon">Phone</h3>
                     <p className="text-gray-700 mt-1">
-                      <a href="tel:+919876543210" className="hover:text-temple-saffron">+91 98765 43210</a><br />
-                      <a href="tel:+919876543211" className="hover:text-temple-saffron">+91 98765 43211</a>
+                      <a href="tel:+919920681945" className="hover:text-temple-saffron">+91 99206 81945</a>
                     </p>
                   </div>
                 </div>
@@ -216,8 +215,7 @@ const ContactPage = () => {
                   <div>
                     <h3 className="text-lg font-medium text-temple-maroon">Email</h3>
                     <p className="text-gray-700 mt-1">
-                      <a href="mailto:info@swayambhupaleshwar.org" className="hover:text-temple-saffron">info@swayambhupaleshwar.org</a><br />
-                      <a href="mailto:enquiry@swayambhupaleshwar.org" className="hover:text-temple-saffron">enquiry@swayambhupaleshwar.org</a>
+                      <a href="mailto:swayambhupaleswar@gmail.com" className="hover:text-temple-saffron">swayambhupaleswar@gmail.com</a>
                     </p>
                   </div>
                 </div>
@@ -229,8 +227,8 @@ const ContactPage = () => {
                   <div>
                     <h3 className="text-lg font-medium text-temple-maroon">Opening Hours</h3>
                     <div className="text-gray-700 mt-1">
-                      <p><strong>Morning:</strong> 5:00 AM - 12:00 PM</p>
-                      <p><strong>Evening:</strong> 4:00 PM - 9:00 PM</p>
+                      <p><strong>Morning:</strong> 6:00 AM - 12:00 PM</p>
+                      <p><strong>Evening:</strong> 5:00 PM - 9:00 PM</p>
                       <p className="mt-1 text-sm text-gray-500">Open all days of the week</p>
                     </div>
                   </div>
@@ -243,7 +241,7 @@ const ContactPage = () => {
                   For immediate assistance or to speak with a temple representative, please call our 
                   helpline number during temple hours.
                 </p>
-                <p className="text-temple-maroon font-semibold">Helpline: +91 98765 43212</p>
+                <p className="text-temple-maroon font-semibold">Helpline: +91 99206 81945</p>
               </div>
             </div>
           </div>
@@ -261,7 +259,7 @@ const ContactPage = () => {
           <div className="max-w-6xl mx-auto">
             <div className="h-96 rounded-lg overflow-hidden shadow-lg mb-8">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30169.721570757467!2d72.86408792282838!3d19.0759837323754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c85099bd2947%3A0x1ecc1a60c474a8ae!2sShree%20Siddhivinayak%20Ganapati%20Temple!5e0!3m2!1sen!2sin!4v1681232059529!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.5610101591938!2d72.87549087520625!3d19.112146182099895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c81452d45f39%3A0xa2d3ff91b282cd9b!2sSwayambhu%20Paleshwar%20Mahadev%20Mandir%20Devasthan!5e1!3m2!1sen!2sin!4v1745494955464!5m2!1sen!2sin" 
                 width="100%" 
                 height="100%" 
                 style={{border: 0}} 
@@ -277,22 +275,21 @@ const ContactPage = () => {
                 <h3 className="text-lg font-semibold text-temple-maroon mb-3">By Car</h3>
                 <p className="text-gray-700">
                   Located just off the main highway. Free parking available for devotees on temple premises. 
-                  Additional paid parking available nearby.
                 </p>
               </div>
               
               <div className="bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-lg font-semibold text-temple-maroon mb-3">By Public Transport</h3>
                 <p className="text-gray-700">
-                  Bus stops within 200m of the temple. Nearest metro station is Central Plaza (1.5km). 
-                  Auto-rickshaws and taxis readily available.
+                <b>By road:</b> On Andheri Kurla Road, take a turn at the Marol signal to go towards Radison Blu.<br/>
+               <b> By public transport:</b> You can visit us from Blue line metro as well as Aqua line metro by getting down at Marol station. We are at walkable distance from there (200m).
                 </p>
               </div>
               
               <div className="bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-lg font-semibold text-temple-maroon mb-3">For Groups</h3>
                 <p className="text-gray-700">
-                  Special arrangements for large groups and tour buses. Contact temple administration in advance 
+                  Special arrangements for large groups and tour buses with Guidance. Contact temple administration in advance 
                   to arrange for group visits.
                 </p>
               </div>
@@ -300,7 +297,27 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-      
+      <div className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-temple-maroon mb-6">Stay Updated</h2>
+          <p className="max-w-2xl mx-auto mb-8 text-gray-700">
+            Subscribe to our newsletter to receive updates about upcoming events, festivals, and ceremonies.
+          </p>
+          
+          <div className="max-w-md mx-auto">
+            <div className="flex">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="temple-input rounded-r-none flex-1"
+              />
+              <button className="btn-primary rounded-l-none">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   );

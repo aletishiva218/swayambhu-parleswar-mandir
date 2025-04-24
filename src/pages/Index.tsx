@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import SectionTitle from '@/components/SectionTitle';
 import EventCard from '@/components/EventCard';
+import shivling from "../assets/images/shivling.png";
 import { Link } from 'react-router-dom';
 
 const Index = () => {
@@ -23,7 +24,7 @@ const Index = () => {
       <div className="py-16 bg-gray-50" ref={aboutRef}>
         <div className="container mx-auto px-4">
           <SectionTitle 
-            title="About स्वयंभू पालेश्वर मंदिर" 
+            title="About स्वयंभू महादेव पालेश्वर देवस्थान" 
             subtitle="Discover the rich history and spiritual significance of our sacred temple dedicated to Lord Shiva."
           />
 
@@ -58,7 +59,7 @@ const Index = () => {
             <div className="flex items-center justify-center">
               <div className="relative max-w-md">
                 <img 
-                  src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" 
+                  src={shivling} 
                   alt="Temple View" 
                   className="rounded-lg shadow-xl z-10 relative"
                 />
@@ -224,9 +225,9 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">Temple Timings</h3>
               <p className="text-gray-700">
-                <strong>Morning:</strong> 5:00 AM - 12:00 PM<br />
-                <strong>Evening:</strong> 4:00 PM - 9:00 PM<br />
-                <strong>Special Puja:</strong> 8:00 AM & 7:00 PM
+                <strong>Morning:</strong> 6:00 AM - 12:00 PM<br />
+                <strong>Evening:</strong> 5:00 PM - 9:00 PM<br />
+                <strong>Monday Special Puja(vastralankar & pushpakaralankar):</strong> 6:30 PM - 8:00 PM
               </p>
             </div>
             
@@ -234,8 +235,9 @@ const Index = () => {
               <div className="w-16 h-16 bg-temple-saffron rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-2xl font-bold">2</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Darshan Queue</h3>
+              <h3 className="text-xl font-semibold mb-3">Darshan Queue<br/>(With Special Passes)</h3>
               <p className="text-gray-700">
+              Only on mahashivratri utsav.<br />
                 Online darshan booking available.<br />
                 Special arrangements for elderly<br />
                 and differently-abled devotees.
@@ -249,14 +251,34 @@ const Index = () => {
               <h3 className="text-xl font-semibold mb-3">Puja Services</h3>
               <p className="text-gray-700">
                 Various puja services available<br />
-                including abhishekam, archana,<br />
+                including abhishekam, archana, goseva, annadanam seva, brahmin annadanam<br />
                 and special occasion pujas.
               </p>
             </div>
           </div>
         </div>
       </div>
-      
+      <div className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-temple-maroon mb-6">Stay Updated</h2>
+          <p className="max-w-2xl mx-auto mb-8 text-gray-700">
+            Subscribe to our newsletter to receive updates about upcoming events, festivals, and ceremonies.
+          </p>
+          
+          <div className="max-w-md mx-auto">
+            <div className="flex">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="temple-input rounded-r-none flex-1"
+              />
+              <button className="btn-primary rounded-l-none">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   );

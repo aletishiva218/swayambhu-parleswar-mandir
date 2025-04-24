@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
 import { CheckCircle } from 'lucide-react';
+import OurHeritageImage from "../assets/images/ourheritage.png";
 
 const AboutPage = () => {
   return (
@@ -42,13 +43,16 @@ const AboutPage = () => {
                   resilient through changing times, natural calamities, and historical transformations, continuing to 
                   serve as a beacon of faith and devotion.
                 </p>
+                <p>
+                  All religions and devotes comes to worship.
+                </p>
               </div>
             </div>
             
             <div className="mt-6 lg:mt-0">
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80" 
+                  src={OurHeritageImage} 
                   alt="Temple Front View" 
                   className="rounded-lg shadow-lg"
                 />
@@ -163,7 +167,7 @@ const AboutPage = () => {
                 <div className="space-y-3">
                   <div className="flex items-center">
                     <CheckCircle size={18} className="text-temple-saffron mr-2" />
-                    <span><strong>Mangala Aarti:</strong> 5:30 AM - Early morning ritual to awaken the deity</span>
+                    <span><strong>Mangala Aarti:</strong> 6:30 AM - Early morning ritual to awaken the deity</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle size={18} className="text-temple-saffron mr-2" />
@@ -171,12 +175,13 @@ const AboutPage = () => {
                   </div>
                   <div className="flex items-center">
                     <CheckCircle size={18} className="text-temple-saffron mr-2" />
-                    <span><strong>Sandhya Aarti:</strong> 6:30 PM - Evening aarti with lamps and flowers</span>
+                    <span><strong>Sandhya Aarti:</strong> 7:30 PM - Evening aarti with lamps and flowers</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle size={18} className="text-temple-saffron mr-2" />
-                    <span><strong>Shayan Aarti:</strong> 8:30 PM - Night ritual before the deity rests</span>
+                    <span><strong>Shayan Aarti:</strong> 8:00 PM - Night ritual before the deity rests</span>
                   </div>
+          
                 </div>
                 
                 <h3 className="text-xl font-semibold text-temple-maroon mt-6">Special Rituals</h3>
@@ -223,9 +228,9 @@ const AboutPage = () => {
                 </p>
                 
                 <address className="not-italic border-l-4 border-temple-saffron pl-4 py-2">
-                  123 Temple Street,<br />
-                  Spiritual Gardens,<br />
-                  Maharashtra, India 400001
+                Village, Swayambhu Paleshwar Mahadev Mandir Rd,<br />
+                 near Dena Bank, Bori Colony, Marol,<br />
+                  Andheri East, Mumbai, Maharashtra 400059
                 </address>
                 
                 <h3 className="text-xl font-semibold text-temple-maroon mt-6">Temple Tours</h3>
@@ -239,7 +244,7 @@ const AboutPage = () => {
                   <h3 className="text-xl font-semibold text-temple-maroon">Temple Rules</h3>
                   <ul className="list-disc pl-6 space-y-2 mt-2">
                     <li>Modest dress is required for all visitors</li>
-                    <li>Photography is restricted in certain areas</li>
+                    <li>Photography is restricted in certain areas in garbhagriha</li>
                     <li>Mobile phones must be switched off or kept in silent mode</li>
                     <li>Shoes must be removed before entering the temple premises</li>
                   </ul>
@@ -250,7 +255,7 @@ const AboutPage = () => {
             <div>
               <div className="h-96 rounded-lg overflow-hidden shadow-lg">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30169.721570757467!2d72.86408792282838!3d19.0759837323754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c85099bd2947%3A0x1ecc1a60c474a8ae!2sShree%20Siddhivinayak%20Ganapati%20Temple!5e0!3m2!1sen!2sin!4v1681232059529!5m2!1sen!2sin" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.5609055772293!2d72.8754908746661!3d19.112151250837766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c81452d45f39%3A0xa2d3ff91b282cd9b!2sSwayambhu%20Paleshwar%20Mahadev%20Mandir%20Devasthan!5e1!3m2!1sen!2sin!4v1745410639509!5m2!1sen!2sin" 
                   width="100%" 
                   height="100%" 
                   style={{border: 0}} 
@@ -269,7 +274,7 @@ const AboutPage = () => {
                 
                 <div className="bg-temple-gold bg-opacity-20 p-4 rounded-lg text-center">
                   <h3 className="font-semibold mb-1 text-temple-maroon">Contact Number</h3>
-                  <p className="text-sm">+91 98765 43210<br />info@swayambhupaleshwar.org</p>
+                  <p className="text-sm">+91 99206 81945<br />swayambhupaleswar@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -317,10 +322,37 @@ const AboutPage = () => {
               <h3 className="text-lg font-semibold mb-2">Significance</h3>
               <p className="text-gray-700">Self-manifested Shiva Linga</p>
             </div>
+            <div className="bg-temple-gold bg-opacity-10 rounded-lg p-6 text-center">
+              <div className="w-16 h-16 bg-temple-maroon rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white text-xl">🕉️</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Ramshila</h3>
+              <p className="text-gray-700">Ramlila: Lord Rama's story, drama.</p>
+            </div>
           </div>
         </div>
       </div>
-      
+      <div className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-temple-maroon mb-6">Stay Updated</h2>
+          <p className="max-w-2xl mx-auto mb-8 text-gray-700">
+            Subscribe to our newsletter to receive updates about upcoming events, festivals, and ceremonies.
+          </p>
+          
+          <div className="max-w-md mx-auto">
+            <div className="flex">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="temple-input rounded-r-none flex-1"
+              />
+              <button className="btn-primary rounded-l-none">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   );

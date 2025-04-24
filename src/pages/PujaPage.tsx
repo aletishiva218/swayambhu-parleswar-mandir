@@ -57,6 +57,8 @@ const PujaPage = () => {
     { value: 'Griha Pravesh', label: 'Griha Pravesh' },
     { value: 'Birthday Puja', label: 'Birthday Puja' },
     { value: 'Wedding Rituals', label: 'Wedding Rituals' },
+    { value: 'Wedding Rituals for NRI', label: 'Wedding Rituals for NRI' },
+    { value: 'Online Puja', label: 'Online Puja' },
   ];
   
   return (
@@ -292,6 +294,10 @@ const PujaPage = () => {
               <div className="mt-8 p-5 bg-temple-gold bg-opacity-10 rounded-lg">
                 <h3 className="text-xl font-semibold text-temple-maroon mb-3">Important Information</h3>
                 <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                    <Check size={18} className="text-temple-saffron mr-2 mt-1 flex-shrink-0" />
+                    <span>Please call the temple: +91 99206 81945</span>
+                  </li>
                   <li className="flex items-start">
                     <Check size={18} className="text-temple-saffron mr-2 mt-1 flex-shrink-0" />
                     <span>Bookings must be made at least 3 days in advance</span>
@@ -310,7 +316,7 @@ const PujaPage = () => {
                   </li>
                   <li className="flex items-start">
                     <Check size={18} className="text-temple-saffron mr-2 mt-1 flex-shrink-0" />
-                    <span>Payment can be made online or at the temple counter</span>
+                    <span>Payment can be made online or at the temple office</span>
                   </li>
                 </ul>
               </div>
@@ -354,7 +360,27 @@ const PujaPage = () => {
           </div>
         </div>
       </div>
-      
+      <div className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-temple-maroon mb-6">Stay Updated</h2>
+          <p className="max-w-2xl mx-auto mb-8 text-gray-700">
+            Subscribe to our newsletter to receive updates about upcoming events, festivals, and ceremonies.
+          </p>
+          
+          <div className="max-w-md mx-auto">
+            <div className="flex">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="temple-input rounded-r-none flex-1"
+              />
+              <button className="btn-primary rounded-l-none">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   );
