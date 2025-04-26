@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import logo from "../assets/images/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,11 +37,12 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
             <div className="w-12 h-12 rounded-full bg-temple-maroon flex items-center justify-center">
-              <span className="om-symbol text-white font-bold text-2xl">ॐ</span>
+              {/* <span className="om-symbol text-white font-bold text-2xl">ॐ</span> */}
+              <img src={logo} alt="" className='rounded-full' />
             </div>
             <div className="ml-2">
               <h1 className={`font-devnagari font-bold text-2xl text-temple-maroon`}>
-                स्वयंभू पालेश्वर
+                स्वयंभू पालेश्वर महादेव मंदिर देवस्थान
               </h1>
               
             </div>

@@ -24,7 +24,7 @@ const Index = () => {
       <div className="py-16 bg-gray-50" ref={aboutRef}>
         <div className="container mx-auto px-4">
           <SectionTitle 
-            title="About स्वयंभू महादेव पालेश्वर देवस्थान" 
+            title="About स्वयंभू पालेश्वर महादेव मंदिर देवस्थान" 
             subtitle="Discover the rich history and spiritual significance of our sacred temple dedicated to Lord Shiva."
           />
 
@@ -227,7 +227,7 @@ const Index = () => {
               <p className="text-gray-700">
                 <strong>Morning:</strong> 6:00 AM - 12:00 PM<br />
                 <strong>Evening:</strong> 5:00 PM - 9:00 PM<br />
-                <strong>Monday Special Puja(vastralankar & pushpakaralankar):</strong> 6:30 PM - 8:00 PM
+                <strong>Monday Special Puja(vastralankar & pushpaalankar):</strong> 6:30 PM - 8:00 PM
               </p>
             </div>
             

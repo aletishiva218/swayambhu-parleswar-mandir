@@ -67,7 +67,7 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <SectionTitle 
             title="Temple Timeline" 
-            subtitle="Explore the rich history of स्वयंभू पालेश्वर मंदिर through the ages"
+            subtitle="Explore the rich history of स्वयंभू पालेश्वर महादेव मंदिर देवस्थान through the ages"
             centered
           />
           
@@ -82,8 +82,8 @@ const AboutPage = () => {
                 <div className="relative flex flex-col lg:flex-row items-center">
                   <div className="lg:w-1/2 lg:pr-8 lg:text-right order-2 lg:order-1">
                     <div className="bg-white p-5 rounded-lg shadow-md">
-                      <h3 className="text-xl font-bold text-temple-maroon mb-2">12th Century</h3>
-                      <p className="text-gray-700">First documented existence of the temple with the self-manifested Shivalinga. Early stone structures were built around the sacred site.</p>
+                      <h3 className="text-xl font-bold text-temple-maroon mb-2">Ancient Times</h3>
+                      <p className="text-gray-700">Believed to be thousands of years old, the temple of स्वयंभू पालेश्वर महादेव in Marol village, Andheri East, became a central place of worship for generations. Devotees claim no one leaves empty-handed from this divine place.</p>
                     </div>
                   </div>
                   
@@ -104,8 +104,8 @@ const AboutPage = () => {
                   
                   <div className="lg:w-1/2 lg:pl-8 order-2">
                     <div className="bg-white p-5 rounded-lg shadow-md">
-                      <h3 className="text-xl font-bold text-temple-maroon mb-2">16th Century</h3>
-                      <p className="text-gray-700">Major expansion of the temple complex with the addition of mandapas, gopurams, and intricate stone carvings by regional rulers.</p>
+                      <h3 className="text-xl font-bold text-temple-maroon mb-2">Early Colonial Period (Portuguese Rule)</h3>
+                      <p className="text-gray-700">When the Portuguese occupied Mumbai, they destroyed many temples, including this one. However, they failed to lift and throw the Shivling into the nearby four-acre pond, showcasing its divine power.</p>
                     </div>
                   </div>
                 </div>
@@ -114,8 +114,8 @@ const AboutPage = () => {
                 <div className="relative flex flex-col lg:flex-row items-center">
                   <div className="lg:w-1/2 lg:pr-8 lg:text-right order-2 lg:order-1">
                     <div className="bg-white p-5 rounded-lg shadow-md">
-                      <h3 className="text-xl font-bold text-temple-maroon mb-2">19th Century</h3>
-                      <p className="text-gray-700">Renovation and restoration work carried out after natural damages. Addition of the outer prakaram and enhancement of religious facilities.</p>
+                      <h3 className="text-xl font-bold text-temple-maroon mb-2">1940</h3>
+                      <p className="text-gray-700">Vitthal Bhaguji Awati had a dream where Lord Paleshwar instructed him to revive the temple. With support from locals, the temple was rebuilt and the Shivling was re-consecrated using Vedic rituals. The old pond was eventually filled and replaced by a garden.</p>
                     </div>
                   </div>
                   
@@ -136,8 +136,40 @@ const AboutPage = () => {
                   
                   <div className="lg:w-1/2 lg:pl-8 order-2">
                     <div className="bg-white p-5 rounded-lg shadow-md">
-                      <h3 className="text-xl font-bold text-temple-maroon mb-2">Present Day</h3>
-                      <p className="text-gray-700">Modern amenities added while preserving the ancient sanctity. Establishment of charitable trusts, community halls, and expansion of devotee services.</p>
+                      <h3 className="text-xl font-bold text-temple-maroon mb-2">Modern Times</h3>
+                      <p className="text-gray-700">The temple now houses idols of Ram-Sita, Hanuman, Sai Baba, Kal Bhairav, and Shani Dev. A special floating stone inscribed with "Shri Ram" from Rameshwaram remains a major attraction. Massive crowds gather during Shravan Mondays and Mahashivratri.</p>
+                    </div>
+                  </div>
+                </div>
+
+                 {/* Item 5 */}
+                 <div className="relative flex flex-col lg:flex-row items-center">
+                  <div className="lg:w-1/2 lg:pr-8 lg:text-right order-2 lg:order-1">
+                    <div className="bg-white p-5 rounded-lg shadow-md">
+                      <h3 className="text-xl font-bold text-temple-maroon mb-2">Festivals and Community</h3>
+                      <p className="text-gray-700">Major festivals like Shani Jayanti, Mahashivratri, Gudi Padwa, and Ashadhi Dadi are celebrated with devotion. Annadaan and three-day celebrations occur during Shivratri. Worship includes cow service and an Ayurvedic store helps sustain temple operations.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="z-10 order-1 lg:order-2 mb-4 lg:mb-0">
+                    <div className="flex items-center justify-center w-10 h-10 bg-temple-saffron rounded-full">
+                      <span className="text-white font-bold">5</span>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Item 6 */}
+                <div className="relative flex flex-col lg:flex-row items-center">
+                  <div className="z-10 order-1 mb-4 lg:mb-0">
+                    <div className="flex items-center justify-center w-10 h-10 bg-temple-saffron rounded-full">
+                      <span className="text-white font-bold">6</span>
+                    </div>
+                  </div>
+                  
+                  <div className="lg:w-1/2 lg:pl-8 order-2">
+                    <div className="bg-white p-5 rounded-lg shadow-md">
+                      <h3 className="text-xl font-bold text-temple-maroon mb-2">Ongoing Developments</h3>
+                      <p className="text-gray-700">Construction of 9 planetary deity structures is underway. A new idol of Kartik Swami is planned. The temple continues to grow as a center of spiritual energy, cultural celebration, and community service.</p>
                     </div>
                   </div>
                 </div>

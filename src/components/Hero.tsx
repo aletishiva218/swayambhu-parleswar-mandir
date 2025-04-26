@@ -14,7 +14,7 @@ const Hero = ({ scrollToAbout }: HeroProps) => {
           <span className="om-symbol text-6xl sm:text-7xl md:text-8xl font-bold inline-block">ॐ</span>
         </div>
         <h1 className="font-devnagari text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate-fade-in">
-          ॐ नमः शिवाय | Welcome to स्वयंभू महादेव पालेश्वर देवस्थान
+          ॐ नमः शिवाय | Welcome to स्वयंभू पालेश्वर महादेव मंदिर देवस्थान
         </h1>
         <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto animate-fade-in opacity-90">
           A sacred Shiva temple with a rich heritage spanning centuries, offering spiritual solace and divine blessings to devotees.

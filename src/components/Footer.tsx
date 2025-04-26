@@ -14,7 +14,7 @@ const Footer = () => {
                 <span className="om-symbol font-bold text-2xl">ॐ</span>
               </div>
               <div className="ml-2">
-                <h3 className="font-devnagari font-bold text-xl">स्वयंभू पालेश्वर</h3>
+                <h3 className="font-devnagari font-bold text-xl">स्वयंभू पालेश्वर महादेव मंदिर देवस्थान</h3>
               </div>
             </div>
             <p className="text-sm mb-4">
@@ -96,7 +96,7 @@ Andheri East, Mumbai, Maharashtra 400059
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-sm">
-          <p>© {new Date().getFullYear()} स्वयंभू पालेश्वर मंदिर. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} स्वयंभू पालेश्वर महादेव मंदिर देवस्थान. All rights reserved.</p>
         </div>
       </div>
     </footer>
