@@ -31,9 +31,9 @@ const EventCard = ({ title, date, month, description, time, location }: EventCar
             </div>
           )}
           
-          <button className="btn-secondary mt-3 text-sm">
+          {/* <button className="btn-secondary mt-3 text-sm">
             Join Us
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

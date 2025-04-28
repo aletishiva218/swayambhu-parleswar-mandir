@@ -248,8 +248,7 @@ const PujaPage = () => {
                   </div>
                   <div className="p-4">
                     <p className="text-gray-700 mb-3">
-                      A powerful ritual dedicated to Lord Shiva, involving bathing the Shivalinga with various sacred substances 
-                      while chanting Vedic mantras.
+                    A powerful ritual dedicated to Lord Shiva, involving bathing the Shivalinga with various sacred substances while chanting Vedic mantras.
                     </p>
                     <div className="flex justify-between">
                       <span className="text-sm">Duration: 3 hours</span>
@@ -260,32 +259,59 @@ const PujaPage = () => {
                 
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <div className="bg-temple-maroon text-white p-4 font-medium">
-                    Mahamrityunjay Jaap
+                  Abhishekam
                   </div>
                   <div className="p-4">
                     <p className="text-gray-700 mb-3">
-                      A sacred chanting ritual to overcome health issues, fear of death, and obstacles. The ritual promotes 
-                      longevity, good health, and protection.
+                    A sacred bathing ceremony of the Shiva Lingam using water, milk, honey, and other sanctified items, symbolizing purification and devotion.
                     </p>
                     <div className="flex justify-between">
-                      <span className="text-sm">Duration: 2 hours</span>
-                      <span className="font-medium">₹ 3,100</span>
+                      <span className="text-sm">Duration: 1 hour</span>
+                      <span className="font-medium">₹ 1,100</span>
                     </div>
                   </div>
                 </div>
                 
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <div className="bg-temple-maroon text-white p-4 font-medium">
-                    Satyanarayana Puja
+                  Maha Mrityunjaya Jaap
                   </div>
                   <div className="p-4">
                     <p className="text-gray-700 mb-3">
-                      A devotional worship ritual performed for Lord Vishnu to seek blessings for prosperity, happiness, 
-                      and fulfillment of desires.
+                    Chanting of the Maha Mrityunjaya Mantra to seek protection from untimely death and promote health and longevity.
                     </p>
                     <div className="flex justify-between">
-                      <span className="text-sm">Duration: 2-3 hours</span>
-                      <span className="font-medium">₹ 2,100</span>
+                      <span className="text-sm">Duration: 4 hours</span>
+                      <span className="font-medium">₹ 7,500</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border border-gray-200 rounded-lg overflow-hidden">
+                  <div className="bg-temple-maroon text-white p-4 font-medium">
+                  Laghu Rudra Pooja
+                  </div>
+                  <div className="p-4">
+                    <p className="text-gray-700 mb-3">
+                    An elaborate form of worship involving the chanting of Rudra mantras and offering various items to Lord Shiva for overall well-being.
+                    </p>
+                    <div className="flex justify-between">
+                      <span className="text-sm">Duration: 2.5 hours</span>
+                      <span className="font-medium">₹ 4,000</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="border border-gray-200 rounded-lg overflow-hidden">
+                  <div className="bg-temple-maroon text-white p-4 font-medium">
+                  Shravan Somvar Special Pooja
+                  </div>
+                  <div className="p-4">
+                    <p className="text-gray-700 mb-3">
+                    Special rituals performed on Mondays during the holy month of Shravan, considered highly auspicious for Lord Shiva devotees.
+                    </p>
+                    <div className="flex justify-between">
+                      <span className="text-sm">Duration: 2 hours</span>
+                      <span className="font-medium">₹ 2,500</span>
                     </div>
                   </div>
                 </div>

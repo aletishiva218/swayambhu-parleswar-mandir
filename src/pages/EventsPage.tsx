@@ -1,10 +1,10 @@
-
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
 import EventCard from '@/components/EventCard';
-import { Calendar, Filter } from 'lucide-react';
+import { Filter } from 'lucide-react';
+import Calendar from '@/components/calendar/Calendar';
 
 const EventsPage = () => {
   const [filter, setFilter] = useState('all');
@@ -96,7 +96,7 @@ const EventsPage = () => {
   const filteredEvents = filter === 'all' 
     ? events 
     : events.filter(event => event.category === filter);
-  
+
   return (
     <>
       <Header />
@@ -163,58 +163,7 @@ const EventsPage = () => {
             centered
           />
           
-          <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6 md:p-8">
-            <div className="flex items-center justify-between mb-8">
-              <h3 className="text-2xl font-bold text-temple-maroon flex items-center">
-                <Calendar size={24} className="mr-2" /> April 2023
-              </h3>
-              <div className="flex space-x-2">
-                <button className="p-2 rounded-md hover:bg-gray-100">
-                  &larr; Previous
-                </button>
-                <button className="p-2 rounded-md hover:bg-gray-100">
-                  Next &rarr;
-                </button>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-7 gap-1">
-              {/* Days of week */}
-              {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map((day, index) => (
-                <div key={index} className="text-center font-semibold p-2">
-                  {day}
-                </div>
-              ))}
-              
-              {/* Empty days */}
-              {Array(6).fill(null).map((_, index) => (
-                <div key={`empty-${index}`} className="p-2 h-24 border border-gray-100"></div>
-              ))}
-              
-              {/* Calendar days */}
-              {Array(30).fill(null).map((_, index) => {
-                const day = index + 1;
-                const hasEvent = events.some(event => parseInt(event.date) === day && event.month === 'Apr');
-                
-                return (
-                  <div 
-                    key={`day-${day}`} 
-                    className={`p-2 h-24 border border-gray-100 ${hasEvent ? 'bg-temple-gold bg-opacity-10' : ''}`}
-                  >
-                    <div className={`text-sm font-medium ${hasEvent ? 'text-temple-maroon' : ''}`}>
-                      {day}
-                    </div>
-                    
-                    {hasEvent && (
-                      <div className="text-xs mt-1 bg-temple-saffron text-white p-1 rounded truncate">
-                        Event
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          <Calendar events={events} />
         </div>
       </div>
       

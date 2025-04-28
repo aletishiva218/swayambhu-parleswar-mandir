@@ -21,13 +21,13 @@ const Footer = () => {
               A sacred space dedicated to Lord Shiva, offering spiritual guidance and a place of worship for devotees.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-temple-saffron transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/swayambhupaleshwar/videos/" className="text-white hover:text-temple-saffron transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-white hover:text-temple-saffron transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/explore/locations/1852171578357324/swayambhu-paleshwar-mahadev-mandir-devasthan/" className="text-white hover:text-temple-saffron transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-white hover:text-temple-saffron transition-colors" aria-label="Youtube">
+              <a href="https://www.youtube.com/@Gramdevswayambhupaleshwar" className="text-white hover:text-temple-saffron transition-colors" aria-label="Youtube">
                 <Youtube size={20} />
               </a>
             </div>
@@ -87,9 +87,8 @@ const Footer = () => {
                 <p>+91 99206 81945</p>
               </div>
               <address className="not-italic">
-              Village, Swayambhu Paleshwar Mahadev Mandir Rd,<br/>
-near Dena Bank, Bori Colony, Marol, <br/>
-Andheri East, Mumbai, Maharashtra 400059
+CTS 856,856/1,951(952) paleshwar mandir road,
+                       opp. bank of baroda, marol village Andheri(east) 400059
               </address>
             </div>
           </div>

@@ -189,9 +189,8 @@ const ContactPage = () => {
                   <div>
                     <h3 className="text-lg font-medium text-temple-maroon">Address</h3>
                     <address className="not-italic text-gray-700 mt-1">
-                    Village, Swayambhu Paleshwar Mahadev Mandir Rd,<br />
-                     near Dena Bank, Bori Colony, Marol,<br />
-                      Andheri East, Mumbai, Maharashtra 400059
+                      CTS 856,856/1,951(952) paleshwar mandir road,<br />
+                       opp. bank of baroda, marol village Andheri(east) 400059
                     </address>
                   </div>
                 </div>

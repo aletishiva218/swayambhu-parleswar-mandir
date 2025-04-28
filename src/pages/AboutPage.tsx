@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
 import { CheckCircle } from 'lucide-react';
-import OurHeritageImage from "../assets/images/ourheritage.png";
+import OurHeritageImage from "../assets/images/gallary/outside view/image1.png";
 
 const AboutPage = () => {
   return (
@@ -16,7 +16,7 @@ const AboutPage = () => {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-temple-maroon mb-6">About Our Temple</h1>
             <p className="text-xl text-gray-700 mb-8 font-light">
-              Discover the spiritual journey of स्वयंभू पालेश्वर मंदिर, a sacred space dedicated to Lord Shiva.
+              Discover the spiritual journey of स्वयंभू पालेश्वर महादेव मंदिर देवस्थान, a sacred space dedicated to Lord Shiva.
             </p>
           </div>
         </div>
@@ -29,19 +29,16 @@ const AboutPage = () => {
               <SectionTitle title="Our Heritage" />
               <div className="space-y-4 text-gray-700">
                 <p>
-                  स्वयंभू पालेश्वर मंदिर, an ancient shrine dating back to the 12th century, stands as a testament to the 
-                  rich cultural and spiritual heritage of India. The temple houses a self-manifested (swayambhu) 
-                  Shivalinga, which is believed to have emerged naturally from the earth.
+                Swayambhu Paleshwar Mahadev Mandir Devasthan stands as a revered spiritual landmark in Marol Gaon, Andheri East, Mumbai. As a historic 'Gramdev' (village deity) temple, it holds a special place in the hearts of the local community. The term Swayambhu signifies "self-manifested," indicating that the Shiva Lingam enshrined here emerged naturally, not crafted by human hands, embodying profound spiritual significance. 
                 </p>
                 <p>
-                  Over the centuries, the temple has undergone several renovations and expansions, with each ruling 
-                  dynasty adding its unique architectural elements. Despite these changes, the sanctity and spiritual 
-                  significance of the original shrine remain preserved.
+                While specific historical records are limited, the temple's enduring presence suggests it has been a center of devotion for generations. Its role as a 'Gramdev' temple underscores its importance in local traditions, where villagers have long sought blessings, guidance, and solace.
                 </p>
                 <p>
-                  The temple has witnessed countless devotees seeking blessings and spiritual solace. It has stood 
-                  resilient through changing times, natural calamities, and historical transformations, continuing to 
-                  serve as a beacon of faith and devotion.
+                The temple's architecture and rituals reflect a blend of ancient customs and regional influences, preserving the rich tapestry of Hindu worship practices. Festivals like Mahashivratri and Shravan Somvar are celebrated with fervor, drawing devotees from across Mumbai and beyond.
+                </p>
+                <p>
+                In essence, Swayambhu Paleshwar Mahadev Mandir Devasthan is not just a place of worship but a living testament to the enduring faith and cultural heritage of the community it serves.
                 </p>
                 <p>
                   All religions and devotes comes to worship.
@@ -230,7 +227,7 @@ const AboutPage = () => {
                 <iframe 
                   width="100%" 
                   height="100%" 
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                  src="https://www.youtube.com/embed/Qq2BaiUJ-jw" 
                   title="Temple Aarti Ceremony" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -247,7 +244,7 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <SectionTitle 
             title="Visit Our Temple" 
-            subtitle="Plan your spiritual journey to स्वयंभू पालेश्वर मंदिर"
+            subtitle="Plan your spiritual journey to स्वयंभू पालेश्वर महादेव मंदिर देवस्थान"
           />
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
@@ -255,14 +252,12 @@ const AboutPage = () => {
               <div className="space-y-4 text-gray-700">
                 <h3 className="text-xl font-semibold text-temple-maroon">Location & Direction</h3>
                 <p>
-                  Located in the heart of the city, स्वयंभू पालेश्वर मंदिर is easily accessible by various modes 
+                  Located in the heart of the city, स्वयंभू पालेश्वर महादेव मंदिर देवस्थान is easily accessible by various modes 
                   of transportation. The temple is situated at:
                 </p>
                 
                 <address className="not-italic border-l-4 border-temple-saffron pl-4 py-2">
-                Village, Swayambhu Paleshwar Mahadev Mandir Rd,<br />
-                 near Dena Bank, Bori Colony, Marol,<br />
-                  Andheri East, Mumbai, Maharashtra 400059
+                  CTS 856,856/1,951(952) paleshwar mandir road,<br /> opp. bank of baroda, marol village Andheri(east) 400059
                 </address>
                 
                 <h3 className="text-xl font-semibold text-temple-maroon mt-6">Temple Tours</h3>
@@ -318,7 +313,7 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <SectionTitle 
             title="Key Facts" 
-            subtitle="Important information about स्वयंभू पालेश्वर मंदिर"
+            subtitle="Important information about स्वयंभू पालेश्वर महादेव मंदिर देवस्थान"
             centered
           />
           

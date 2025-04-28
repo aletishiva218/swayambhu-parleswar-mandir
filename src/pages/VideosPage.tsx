@@ -8,79 +8,189 @@ import VideoCard from '@/components/VideoCard';
 const VideosPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   
-  // Sample video data
+  // Sample video data with Facebook video URLs
   const videos = [
     {
       id: 1,
-      title: 'Morning Aarti - Mangala Aarti',
-      embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      date: 'March 15, 2023',
-      description: 'Daily morning ritual performed at dawn to awaken the deity.',
+      title: 'Morning Aarti',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/1075319014272064/',
+      description: 'A beautiful ritual conducted early in the morning to wake the deity and invoke blessings for the day ahead..',
       category: 'aarti'
     },
     {
       id: 2,
-      title: 'Shiva Tandava Stotram',
-      embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      date: 'February 10, 2023',
-      description: 'Ancient hymn dedicated to Lord Shiva describing his powerful dance.',
-      category: 'devotional'
-    },
-    {
-      id: 3,
-      title: 'Mahashivratri Special Celebration',
-      embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      date: 'February 18, 2023',
-      description: 'Special celebrations and rituals on the occasion of Mahashivratri.',
-      category: 'festivals'
-    },
-    {
-      id: 4,
-      title: 'Evening Aarti - Sandhya Aarti',
-      embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      date: 'March 5, 2023',
-      description: 'Evening ritual performed with lamps and offerings.',
+      title: 'Evening Aarti',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/1974717373014694/',
+      description: 'The evening ritual, a devotional song and prayer, offering gratitude to Lord Shiva and seeking protection through the night.',
       category: 'aarti'
     },
     {
+      id: 3,
+      title: 'Mahashivratri Aarti',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/2907805179394285/',
+      description: 'The powerful Aarti performed on Mahashivratri, one of the holiest nights dedicated to Lord Shiva.',
+      category: 'aarti'
+    },
+    {
+      id: 4,
+      title: 'Mahashivratri 2025 Celebration',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/1231191240905090/',
+      description: 'The grand celebration of Maha Shivratri, involving special rituals and prayers to honor Lord Shiva.',
+      category: 'festivals'
+    },
+    {
       id: 5,
-      title: 'Spiritual Discourse on Shiva Purana',
-      embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      date: 'January 25, 2023',
-      description: 'Lecture by Swami Shivananda on the sacred texts of Shiva Purana.',
-      category: 'discourses'
+      title: 'Ganesh Chaturthi Celebration',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/640628565321302/',
+      description: 'Celebration of Lord Ganesha’s birth, featuring the installation of Ganesh idols, prayers, and immersion ceremonies.',
+      category: 'festivals'
     },
     {
       id: 6,
-      title: 'Temple Architecture Tour',
-      embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      date: 'December 12, 2022',
-      description: 'Guided tour explaining the symbolism and history of temple architecture.',
-      category: 'tours'
+      title: 'Diwali Celebration',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/528985883220116/',
+      description: 'The festival of lights, Diwali, celebrated with lamps, prayers, and worship to Goddess Lakshmi and Lord Shiva.',
+      category: 'festivals'
     },
     {
       id: 7,
-      title: 'Rudrabhishek Ceremony',
-      embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      date: 'March 1, 2023',
-      description: 'Special bathing ceremony of Lord Shiva performed with sacred substances.',
-      category: 'ceremonies'
+      title: 'Navratri Celebration',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/403742222009803/',
+      description: 'Nine nights of devotion and prayers, celebrating Goddess Durga and other deities with dance and rituals.',
+      category: 'festivals'
     },
     {
       id: 8,
-      title: 'Navratri Festival Highlights',
-      embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      date: 'October 15, 2022',
-      description: 'Celebration of the nine-day festival dedicated to the divine feminine.',
+      title: 'Gudi Padwa Celebration',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/562987311090458/',
+      description: 'The Marathi New Year celebration, marked by rituals, prayers, and the raising of the Gudi (a symbolic flag).',
       category: 'festivals'
     },
     {
       id: 9,
-      title: 'Vedic Chanting Session',
-      embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      date: 'February 5, 2023',
-      description: 'Traditional Vedic mantras chanted by temple priests.',
+      title: 'Bhajan Session',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/1153765033034580/',
+      description: 'A session of devotional singing, singing hymns in praise of Lord Shiva to elevate the spiritual atmosphere.',
       category: 'devotional'
+    },
+    {
+      id: 10,
+      title: 'Shiv Stotra Chanting',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/1141467870978717/',
+      description: 'The chanting of sacred Shiva Stotras, invocations to invoke blessings, peace, and prosperity.',
+      category: 'devotional'
+    },
+    {
+      id: 11,
+      title: 'Shiv Vandana',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/1275020560001652/',
+      description: 'The prayer or praise to Lord Shiva, emphasizing devotion and surrender to his divine energy.',
+      category: 'devotional'
+    },
+    {
+      id: 12,
+      title: 'Puja Rituals',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/640628565321302/',
+      description: 'The daily rituals performed at the temple to honor Lord Shiva, invoking divine energy and blessings.',
+      category: 'devotional'
+    },
+    {
+      id: 13,
+      title: 'Devotional Songs',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/2907805179394285/',
+      description: 'A collection of devotional music dedicated to Lord Shiva, enriching the spiritual experience.',
+      category: 'devotional'
+    },
+    {
+      id:14,
+      title: 'Spiritual Talk on Lord Shiva',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/1075319014272064/',
+      description: 'A discourse that delves into the significance of Lord Shiva’s teachings and philosophy.',
+      category: 'discourses'
+    },
+    {
+      id:15,
+      title: 'Importance of Mahashivratri',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/1974717373014694/',
+      description: 'A talk explaining the spiritual and religious significance of the holy night of Mahashivratri.',
+      category: 'discourses'
+    },
+    {
+      id:16,
+      title: 'Understanding Rudrabhishek',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/2907805179394285/',
+      description: 'A discourse explaining the Rudrabhishek, a sacred ritual to invoke the blessings of Lord Shiva.',
+      category: 'discourses'
+    },
+    {
+      id:17,
+      title: 'Teachings of Lord Shiva',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/562987311090458/',
+      description: 'Insights into the profound teachings of Lord Shiva and how they guide devotees on the path of spirituality.',
+      category: 'discourses'
+    },
+    {
+      id:18,
+      title: 'Wedding Ceremony at Temple',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/1153765033034580/',
+      description: 'A traditional wedding ceremony held at the temple, invoking divine blessings for the couple.',
+      category: 'ceremonies'
+    },
+    {
+      id:19,
+      title: 'Naming Ceremony',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/1141467870978717/',
+      description: 'A spiritual ceremony where newborns are named and blessed by the priest.',
+      category: 'ceremonies'
+    },
+    {
+      id:20,
+      title: 'Housewarming Ceremony',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/1275020560001652/',
+      description: 'A ceremony to bless a new home and seek prosperity, peace, and protection.',
+      category: 'ceremonies'
+    },
+    {
+      id:21,
+      title: 'Thread Ceremony',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/640628565321302/',
+      description: 'A rite of passage where young boys are blessed and given sacred threads as a symbol of their spiritual growth.',
+      category: 'ceremonies'
+    },
+    {
+      id:22,
+      title: 'Annaprashan Ceremony',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/2907805179394285/',
+      description: 'The ceremony where an infant is given solid food for the first time, marked with blessings and rituals.',
+      category: 'ceremonies'
+    },
+    {
+      id:23,
+      title: 'Temple Walkthrough',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/1075319014272064/',
+      description: 'A virtual tour of the temple, showcasing its architecture, divine ambiance, and spiritual significance.',
+      category: 'tours'
+    },
+    {
+      id:24,
+      title: 'Temple Architecture Tour',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/1974717373014694/',
+      description: "A guided exploration of the temple's stunning architectural features, including carvings and intricate designs.",
+      category: 'tours'
+    },
+    {
+      id:25,
+      title: 'Temple Grounds Tour',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/2907805179394285/',
+      description: 'A walkthrough of the temple grounds, showcasing its gardens, pathways, and serene atmosphere.',
+      category: 'tours'
+    },
+    {
+      id:26,
+      title: 'Visitor Experience at Temple',
+      embedUrl: 'https://www.facebook.com/plugins/video.php?height=314&href=https://www.facebook.com/swayambhupaleshwar/videos/562987311090458/',
+      description: 'A video documenting the experience of visitors coming to the temple for prayers and rituals.',
+      category: 'tours'
     }
   ];
   
@@ -135,7 +245,6 @@ const VideosPage = () => {
                 key={video.id}
                 title={video.title}
                 embedUrl={video.embedUrl}
-                date={video.date}
                 description={video.description}
               />
             ))}
@@ -151,7 +260,7 @@ const VideosPage = () => {
             recordings of temple ceremonies, spiritual discourses, and festival celebrations.
           </p>
           <a 
-            href="https://www.youtube.com" 
+            href="https://www.youtube.com/@Gramdevswayambhupaleshwar" 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn-primary"
@@ -162,50 +271,22 @@ const VideosPage = () => {
       </div>
       
       <div className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <SectionTitle 
-            title="Live Darshan" 
-            subtitle="Connect with the divine through our daily live streaming"
-            centered
-          />
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-temple-maroon mb-6">Stay Updated</h2>
+          <p className="max-w-2xl mx-auto mb-8 text-gray-700">
+            Subscribe to our newsletter to receive updates about upcoming events, festivals, and ceremonies.
+          </p>
           
-          <div className="max-w-4xl mx-auto">
-            <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
-              <iframe 
-                width="100%" 
-                height="100%" 
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                title="Live Darshan" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen
-                className="w-full h-full object-cover"
-              ></iframe>
-            </div>
-            
-            <div className="mt-8 p-6 bg-temple-gold bg-opacity-10 rounded-lg">
-              <h3 className="text-xl font-semibold text-temple-maroon mb-3">Live Streaming Schedule</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="p-4 bg-white rounded">
-                  <h4 className="font-medium mb-2">Morning Aarti</h4>
-                  <p className="text-gray-600">Daily: 5:30 AM - 6:15 AM</p>
-                </div>
-                
-                <div className="p-4 bg-white rounded">
-                  <h4 className="font-medium mb-2">Afternoon Aarti</h4>
-                  <p className="text-gray-600">Daily: 12:00 PM - 12:30 PM</p>
-                </div>
-                
-                <div className="p-4 bg-white rounded">
-                  <h4 className="font-medium mb-2">Evening Aarti</h4>
-                  <p className="text-gray-600">Daily: 6:30 PM - 7:15 PM</p>
-                </div>
-                
-                <div className="p-4 bg-white rounded">
-                  <h4 className="font-medium mb-2">Special Pujas</h4>
-                  <p className="text-gray-600">Check schedule for timings</p>
-                </div>
-              </div>
+          <div className="max-w-md mx-auto">
+            <div className="flex">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="temple-input rounded-r-none flex-1"
+              />
+              <button className="btn-primary rounded-l-none">
+                Subscribe
+              </button>
             </div>
           </div>
         </div>

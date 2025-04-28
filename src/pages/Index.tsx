@@ -8,6 +8,13 @@ import SectionTitle from '@/components/SectionTitle';
 import EventCard from '@/components/EventCard';
 import shivling from "../assets/images/shivling.png";
 import { Link } from 'react-router-dom';
+import MorningAartiImage from "../assets/images/temple activities/morning aarti.png";
+import abhishekamImage from "../assets/images/temple activities/abhishekam.png";
+import AfternoonPoojaImage from "../assets/images/temple activities/Afternoon Pooja.png";
+import EveningAartiImage from "../assets/images/temple activities/Evening Aarti.png";
+import MahaShivratriImage from "../assets/images/temple activities/Maha Shivratri Festival Celebrations.png";
+import RudrabhishekPoojaImage from "../assets/images/temple activities/Rudrabhishek Pooja (Special Ritual).png";
+import ShringarandAlankarImage from "../assets/images/temple activities/Shringar and Alankara.png";
 
 const Index = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -31,19 +38,13 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="space-y-4">
               <p className="text-gray-700 leading-relaxed">
-                स्वयंभू पालेश्वर मंदिर is a historical Shiva temple believed to be self-manifested (Swayambhu). 
-                Legend has it that the Shivalinga appeared naturally from the earth centuries ago, making this site 
-                especially sacred to devotees.
+              Swayambhu Paleshwar Mahadev Mandir Devasthan is a sacred and ancient temple dedicated to Lord Shiva, revered by devotees for its divine energy and spiritual significance. The word Swayambhu means "self-manifested," signifying that the Shiva Lingam here is not man-made but emerged naturally, making it an exceptionally powerful and holy site.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                The temple architecture represents the classic Indian temple style with intricate carvings depicting 
-                various forms of Lord Shiva and stories from Hindu mythology. The main sanctum houses the ancient 
-                Swayambhu Shivalinga, which continues to draw devotees seeking blessings.
+              Situated in a serene and peaceful environment, the temple is a place of deep devotion, meditation, and worship. Thousands of devotees visit the temple throughout the year, especially during the holy month of Shravan and on the auspicious occasion of Mahashivratri, to seek blessings, offer prayers, and experience the spiritual vibrations of Lord Paleshwar Mahadev.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Daily rituals and special pujas are performed by learned priests according to Vedic traditions. 
-                During festivals like Mahashivaratri, thousands of devotees visit to receive darshan and participate 
-                in the celebrations.
+              The temple complex is beautifully maintained and serves not only as a religious center but also as a space for community gatherings, spiritual programs, and traditional rituals. With its rich history, divine presence, and spiritual importance, Swayambhu Paleshwar Mahadev Mandir Devasthan continues to be a beacon of faith, peace, and devotion for all who visit.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
@@ -84,13 +85,13 @@ const Index = () => {
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="bg-white rounded-lg overflow-hidden shadow-md h-full">
                   <img 
-                    src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=600&q=80"
+                    src={MorningAartiImage}
                     alt="Morning Aarti" 
                     className="w-full h-48 object-cover"
                   />
                   <div className="p-4">
                     <h3 className="font-semibold text-xl text-temple-maroon mb-2">Morning Aarti</h3>
-                    <p className="text-gray-600 text-sm">Daily ritual performed at dawn to awaken the deity, accompanied by bells and mantras.</p>
+                    <p className="text-gray-600 text-sm">A daily ritual performed at dawn to awaken the deity, accompanied by bells and mantras.</p>
                     <div className="mt-4 text-sm text-gray-500">
                       <p>Timings: 5:30 AM - 6:15 AM</p>
                     </div>
@@ -101,53 +102,105 @@ const Index = () => {
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="bg-white rounded-lg overflow-hidden shadow-md h-full">
                   <img 
-                    src="https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=600&q=80"
-                    alt="Evening Puja" 
+                    src={abhishekamImage}
+                    alt="Abhishekam (Sacred Bathing)" 
                     className="w-full h-48 object-cover"
                   />
                   <div className="p-4">
-                    <h3 className="font-semibold text-xl text-temple-maroon mb-2">Evening Puja</h3>
-                    <p className="text-gray-600 text-sm">Traditional worship ceremony with offerings of flowers, incense and light.</p>
+                    <h3 className="font-semibold text-xl text-temple-maroon mb-2">Abhishekam (Sacred Bathing)</h3>
+                    <p className="text-gray-600 text-sm">Ritual bathing of the Swayambhu Shiva Lingam with water, milk, honey, and other sacred items.</p>
                     <div className="mt-4 text-sm text-gray-500">
-                      <p>Timings: 6:30 PM - 7:30 PM</p>
+                      <p>Timings: 7:00 AM - 8:00 AM</p>
                     </div>
                   </div>
                 </div>
               </CarouselItem>
-              
+             
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="bg-white rounded-lg overflow-hidden shadow-md h-full">
                   <img 
-                    src="https://images.unsplash.com/photo-1466442929976-97f336a657be?auto=format&fit=crop&w=600&q=80"
-                    alt="Abhishekam" 
+                    src={ShringarandAlankarImage}
+                    alt="Shringar and Alankara" 
                     className="w-full h-48 object-cover"
                   />
                   <div className="p-4">
-                    <h3 className="font-semibold text-xl text-temple-maroon mb-2">Rudrabhishekam</h3>
-                    <p className="text-gray-600 text-sm">Special ritual bathing of the Shiva Linga with milk, curd, honey, and other offerings.</p>
+                    <h3 className="font-semibold text-xl text-temple-maroon mb-2">Shringar and Alankara</h3>
+                    <p className="text-gray-600 text-sm">Adorning the deity with beautiful clothes, flowers, and ornaments, symbolizing devotion and respect..</p>
                     <div className="mt-4 text-sm text-gray-500">
-                      <p>Every Monday: 9:00 AM - 11:00 AM</p>
+                      <p>Timings: 8:30 AM – 9:00 AM</p>
                     </div>
                   </div>
                 </div>
               </CarouselItem>
-              
+
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="bg-white rounded-lg overflow-hidden shadow-md h-full">
                   <img 
-                    src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80"
-                    alt="Bhajan Sandhya" 
+                    src={AfternoonPoojaImage}
+                    alt="Afternoon Pooja" 
                     className="w-full h-48 object-cover"
                   />
                   <div className="p-4">
-                    <h3 className="font-semibold text-xl text-temple-maroon mb-2">Bhajan Sandhya</h3>
-                    <p className="text-gray-600 text-sm">Evening devotional singing session with traditional instruments.</p>
+                    <h3 className="font-semibold text-xl text-temple-maroon mb-2">Afternoon Pooja</h3>
+                    <p className="text-gray-600 text-sm">Midday offering and prayer session where special bhog (offerings) are presented to Lord Shiva..</p>
                     <div className="mt-4 text-sm text-gray-500">
-                      <p>Every Saturday: 7:00 PM - 8:30 PM</p>
+                      <p>Timings:12:00 PM – 12:30 PM</p>
                     </div>
                   </div>
                 </div>
               </CarouselItem>
+             
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <div className="bg-white rounded-lg overflow-hidden shadow-md h-full">
+                  <img 
+                    src={EveningAartiImage}
+                    alt="Evening Aarti" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4">
+                    <h3 className="font-semibold text-xl text-temple-maroon mb-2">Evening Aarti</h3>
+                    <p className="text-gray-600 text-sm">Sacred evening ritual to offer gratitude, light lamps, and chant prayers as the day ends.</p>
+                    <div className="mt-4 text-sm text-gray-500">
+                      <p>Timings:7:00 PM – 7:45 PM</p>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <div className="bg-white rounded-lg overflow-hidden shadow-md h-full">
+                  <img 
+                    src={RudrabhishekPoojaImage}
+                    alt="Rudrabhishek Pooja (Special Ritual)" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4">
+                    <h3 className="font-semibold text-xl text-temple-maroon mb-2">Rudrabhishek Pooja (Special Ritual)</h3>
+                    <p className="text-gray-600 text-sm">Powerful Vedic ritual performed to invoke the blessings of Lord Shiva for health, prosperity, and peace.</p>
+                    <div className="mt-4 text-sm text-gray-500">
+                      <p>Timings:By Prior Booking</p>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <div className="bg-white rounded-lg overflow-hidden shadow-md h-full">
+                  <img 
+                    src={MahaShivratriImage}
+                    alt="Maha Shivratri Festival Celebrations" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4">
+                    <h3 className="font-semibold text-xl text-temple-maroon mb-2">Maha Shivratri Festival Celebrations</h3>
+                    <p className="text-gray-600 text-sm">Grand celebration with night-long chanting, bhajans, abhishekams, and special darshan of Lord Paleshwar Mahadev.</p>
+                    <div className="mt-4 text-sm text-gray-500">
+                      <p>Timings:As per festival schedule</p>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+
             </CarouselContent>
             <CarouselPrevious className="left-0" />
             <CarouselNext className="right-0" />
